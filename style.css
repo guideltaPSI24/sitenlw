@@ -51,6 +51,8 @@ h1 {
   border-radius: 0 60rem;
   font: 500 1rem 'DM Sans', Sans-serif;
   justify-content: center;
+  margin-left: 4rem;
+  margin-right: 0rem;
 }
 
 .button:hover {
@@ -125,8 +127,8 @@ nav {
 }
 
 #home .text {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 4rem;
+  margin-right: 0rem;
   text-align: center;
 }
 

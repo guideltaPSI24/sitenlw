@@ -146,6 +146,7 @@ nav {
 #home .text {
   text-align: center;
   font-family: Snell Roundhand;
+  margin-left: 2.5rem;
 }
 
 #home .text h1 {

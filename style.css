@@ -84,10 +84,12 @@ nav {
 .logo {
   font: 700 1.31rem 'poppins', sans-serif;
   color: var(--title-color);
+  font-family: Luminari;
 }
 
 .logo span {
   color: var(--base-color);
+  font-family: Luminari;
 }
 
 .container {

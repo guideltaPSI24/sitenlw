@@ -249,7 +249,7 @@ nav.show div.icon-close {
 
 #home .image img,
 #home .image::before {
-  border-radius: 7rem;
+  border-radius: 4rem;
 }
 
 #home .image,
@@ -328,7 +328,7 @@ nav.show div.icon-close {
 
 #about .image img,
 #about .image::before {
-  border-radius: 7rem;
+  border-radius: 4rem;
 }
 
 #about .image,

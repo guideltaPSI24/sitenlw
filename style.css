@@ -22,7 +22,7 @@ img {
 :root {
   --header-height: 4.5rem;
   /*colors*/
-  --hue: 80;
+  --hue: 900;
   /* hsl color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -54,10 +54,10 @@ body {
   display: inline-flex;
   align-items: center;
   padding: 0 2rem;
-  border-radius: 0 60rem;
+  border-radius: 1.7rem;
   font: 500 1rem 'DM Sans', Sans-serif;
   justify-content: center;
-  margin-left: 4rem;
+  margin-left: 5rem;
   margin-right: 0rem;
 }
 
@@ -69,8 +69,16 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 36%, 57%, 1) 0%,
-    hsla(var(--hue), 65%, 88%, 0.34) 100%
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, 0.34)
+  );
+}
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 65%, 88%, 0.34),
+    hsla(var(--hue), 36%, 57%, 1)
   );
 }
 
@@ -89,6 +97,10 @@ body {
 
 .section {
   padding: 5rem 0;
+}
+
+.section .title {
+  margin-bottom: 1rem;
 }
 
 #header {
@@ -225,8 +237,8 @@ nav.show div.icon-close {
   width: 100%;
   background: var(--base-color-second);
   position: absolute;
-  top: -16.8%;
-  left: 16.7%;
+  top: -15%;
+  left: 15%;
   z-index: 0;
 }
 
@@ -240,7 +252,8 @@ nav.show div.icon-close {
   border-radius: 7rem;
 }
 
-#home .image #home .text {
+#home .image,
+#home .text {
   margin-left: 4rem;
   margin-right: 0rem;
   text-align: center;
@@ -280,6 +293,85 @@ nav.show div.icon-close {
 }
 
 #home .text li {
+  list-style: crowns;
+  margin-left: 26px;
+}
+
+/*============ about ========== */
+
+#about {
+  background: white;
+}
+
+#about .container {
+  margin: 0;
+}
+
+#about .image {
+  position: relative;
+}
+
+#about .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -33%;
+  z-index: 0;
+}
+
+#about .image img {
+  position: relative;
+}
+
+#about .image img,
+#about .image::before {
+  border-radius: 7rem;
+}
+
+#about .image,
+#about .text {
+  margin-left: 4rem;
+  margin-right: 0rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#about .text {
+  text-align: center;
+  font-family: Snell Roundhand;
+  margin-left: 2.5rem;
+}
+
+#about .text h1 {
+  margin-bottom: 1rem;
+}
+
+#about .text p {
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+
+#about .text ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@counter-style crowns {
+  system: cyclic;
+  symbols: '👑';
+  suffix: ' ';
+}
+
+#about .text li {
   list-style: crowns;
   margin-left: 26px;
 }

@@ -62,7 +62,7 @@ body {
   font: 500 1rem 'DM Sans', Sans-serif;
   justify-content: center;
   margin-left: 5rem;
-  margin-right: 0rem;
+  margin-right: 5rem;
 }
 
 .button:hover {
@@ -264,6 +264,7 @@ nav.show div.icon-close {
 }
 
 #home .image,
+
 #home .text {
   margin-left: 4rem;
   margin-right: 0rem;
@@ -276,6 +277,7 @@ nav.show div.icon-close {
   text-align: center;
   font-family: Snell Roundhand;
   margin-left: 2.5rem;
+  
 }
 
 #home .text h1 {
@@ -345,7 +347,7 @@ nav.show div.icon-close {
 #about .image,
 #about .text {
   margin-left: 4rem;
-  margin-right: 0rem;
+  margin-right: 4rem;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -419,4 +421,11 @@ nav.show div.icon-close {
  .icon {
   width: auto !important;
   margin-bottom: 10px;
+ }
+
+ div.title{
+  text-align: center;
+}
+ p{
+  text-align: center;
  }

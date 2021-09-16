@@ -17,3 +17,17 @@ for (const link of links) {
     nav.classList.remove('show')
   })
 }
+
+const header = docoment.querySelector('#header')
+const navHeight = header.offsetHeight
+
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= navheight) {
+    //scroll e maior que a altura do header
+    header.classlist.add('scroll')
+    console.log('mair')
+  } else {
+    //menor que a altura do header
+    header.classList.remove('scroll')
+  }
+})
